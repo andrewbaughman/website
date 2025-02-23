@@ -1,1 +1,0 @@
-import{t as o,a as t}from"../chunks/DsRvt8Bh.js";import"../chunks/DhoFz1nR.js";import{$ as p}from"../chunks/DK5zWv6q.js";import{h as e}from"../chunks/VHpuoiwP.js";var n=o('<span class="svelte-18v2f4w">THIS<br> IS<br> MY<br> WEBSITE!</span>');function d(a){var r=n();e(s=>{p.title="DruLand"}),t(a,r)}export{d as component};
