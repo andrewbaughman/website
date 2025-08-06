@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Dru Land</title>
+<description>This is my website. It exists for me to have fun and do things that interest me.</description>
+<link>https://dru.land</link>
+<atom:link href="https://dru.land/rss.xml" rel="self" type="application/rss+xml"/>
+<item>
+<guid isPermaLink="true">https://dru.land/blog//blog/posts/1</guid>
+<title>My First Post</title>
+<link>https://dru.land/blog//blog/posts/1</link>
+<description>My First Post</description>
+<pubDate>Wed, 15 Jan 2025 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

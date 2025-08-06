@@ -1,0 +1,1 @@
+import{t as e,a as o}from"./DUW9Zcy_.js";import"./Chz4_fqG.js";import{z as r}from"./DYyEKRr7.js";const s={title:"My First Post",date:"2025-01-15"},{title:d,date:f}=s;var m=e("<h1>My First Blog Post</h1> <p>Content goes here…</p>",1);function l(t){var a=m();r(2),o(t,a)}export{l as default,s as metadata};
