@@ -6,10 +6,13 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter(),
-		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/website' : '',
-		}
+		adapter: adapter({
+			pages: 'dist',
+			assets: 'dist',
+			fallback: 'index.html',
+			precompress: false,
+			strict: false
+		})
 	}
 };
 
