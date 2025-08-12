@@ -7,11 +7,7 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-			pages: 'dist',
-			assets: 'dist',
-			fallback: 'index.html',
-			precompress: false,
-			strict: false
+			fallback: 'index.html'
 		})
 	}
 };
