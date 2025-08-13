@@ -1,6 +1,10 @@
 # This is a basic workflow to automatically build a Svelte app and deploy it to GitHub Pages
 
 name: Deploy to GitHub Pages
+permissions:
+  contents: write     # needed to push to gh-pages
+  pages: write        # needed if using deploy-pages
+  id-token: write     # needed if using deploy-pages
 
 on:
   push:
