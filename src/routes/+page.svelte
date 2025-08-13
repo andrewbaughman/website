@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>DruLand</title>    
+    <title>Dru Land</title>    
 </svelte:head>
 
 <p>THIS</p>
