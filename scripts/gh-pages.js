@@ -1,7 +1,7 @@
 import ghpages from 'gh-pages';
 
 ghpages.publish(
-    'public',
+    'build',
     {
         branch: 'gh-pages',
         silent: true,
