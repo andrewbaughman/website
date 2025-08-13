@@ -1,0 +1,1 @@
+import{t,a as p}from"../chunks/Doc5R4-m.js";import"../chunks/DmXp00f1.js";import{n as s}from"../chunks/r3sb4fzG.js";var l=t('<head><title>DruLand</title></head> <main><p class="svelte-z964he">THIS</p> <p class="svelte-z964he">IS</p> <p class="svelte-z964he">MY</p> <p class="svelte-z964he">WEBSITE</p></main>',1);function m(e){var a=l();s(2),p(e,a)}export{m as component};
