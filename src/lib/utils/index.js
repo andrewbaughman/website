@@ -4,15 +4,24 @@ export const fetchMarkdownPosts = async () => {
 
     const allPosts = await Promise.all(
         iterablePostFiles.map(async ([path, resolver]) => {
-            const { metadata } = await resolver();
-            const postPath = path.slice(11, -3);
+            try {
+                const resolved = await resolver();
+                // Handle both metadata and default export patterns
+                const metadata = resolved?.metadata || resolved?.default?.metadata || {};
+                // Extract slug from the full source path
+                const postPath = path.replace('/src/routes/blog/posts/', '').replace('.md', '');
 
-            return {
-                meta: metadata,
-                path: postPath
+                return {
+                    meta: metadata,
+                    path: postPath
+                };
+            } catch (error) {
+                console.error(`Error processing post at ${path}:`, error);
+                return null;
             }
         })
     );
 
-    return allPosts;
+    // Filter out any failed posts
+    return allPosts.filter(post => post !== null);
 };
