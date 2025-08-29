@@ -3,7 +3,7 @@
 </script>
 
 <h1>Blog</h1>
-<a href="/rss"> Subscribe via RSS here</a>
+<a href="/rss.xml"> Subscribe via RSS here</a>
 
 <ul>
     {#if data.posts.length > 0}
