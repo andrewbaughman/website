@@ -9,11 +9,8 @@
 <guid isPermaLink="true">https://dru.land/blog/my-first-blog-post</guid>
 <title>My First Post</title>
 <link>https://dru.land/blog/my-first-blog-post</link>
-<description>I decided to make a blog, as opposed to writing one.</description>
-<content:encoded><![CDATA[
-# My First Blog Post
-
-I decided to make a blog, as opposed to writing one. Since this website is purely for fun, I don't feel the need to write about anything important or to write anything at all if I don't feel like it. I need one post though, because I'm too lazy to make this work with zero posts.]]></content:encoded>
+<description>My First Post</description>
+<content:encoded><![CDATA[]]></content:encoded>
 <pubDate>Wed, 06 Aug 2025 00:00:00 GMT</pubDate>
 </item>
 </channel>
