@@ -3,7 +3,10 @@
 </script>
 
 <h1>Blog</h1>
-<a href="/feed.rss"> Subscribe via RSS here</a>
+<a href="/feed.rss">
+    <img src="/rss_3536964.png" alt="RSS" />
+    <span>RSS Feed</span>
+</a>
 
 <ul>
     {#if data.posts.length > 0}
