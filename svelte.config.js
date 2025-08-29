@@ -6,7 +6,7 @@ import { join } from 'path';
 
 // Dynamically generate prerender entries based on blog posts
 function getPrerenderEntries() {
-    const baseEntries = ['/', '/blog', '/rss'];
+    const baseEntries = ['/', '/blog', '/feed'];
     const postsDir = join(process.cwd(), 'src/routes/blog/posts');
 
     try {
