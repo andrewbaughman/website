@@ -4,13 +4,15 @@
 <title>Dru Land</title>
 <description>This is my website. It exists for me to have fun and do things that interest me.</description>
 <link>https://dru.land</link>
-<atom:link href="https://dru.land/feed" rel="self" type="application/rss+xml"/>
+<atom:link href="https://dru.land/feed.rss" rel="self" type="application/rss+xml"/>
 <item>
 <guid isPermaLink="true">https://dru.land/blog/my-first-blog-post</guid>
 <title>My First Post</title>
 <link>https://dru.land/blog/my-first-blog-post</link>
 <description>My First Post</description>
-<content:encoded><![CDATA[]]></content:encoded>
+<content:encoded><![CDATA[<h1>My First Blog Post</h1>
+<p>I decided to make a blog, as opposed to writing one. Since this website is purely for fun, I don&#39;t feel the need to write about anything important or to write anything at all if I don&#39;t feel like it. I need one post though, because I&#39;m too lazy to make this work with zero posts.</p>
+]]></content:encoded>
 <pubDate>Wed, 06 Aug 2025 00:00:00 GMT</pubDate>
 </item>
 </channel>
