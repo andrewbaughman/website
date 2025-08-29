@@ -11,9 +11,15 @@ export const fetchMarkdownPosts = async () => {
                 // Extract slug from the full source path
                 const postPath = path.replace('/src/routes/blog/posts/', '').replace('.md', '');
 
+                // Try to get the body/content from the resolved module
+                const body = resolved?.default?.render
+                    ? resolved.default.render().html // SvelteKit markdown uses .render().html
+                    : resolved?.body || ''; // fallback if structure is different
+
                 return {
                     meta: metadata,
-                    path: postPath
+                    path: postPath,
+                    body
                 };
             } catch (error) {
                 console.error(`Error processing post at ${path}:`, error);
