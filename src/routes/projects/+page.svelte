@@ -1,4 +1,4 @@
 <h1>Projects</h1>
 <ul>
-    <li><a href="/todayis">Today is...</a></li>
+	<li><a href="/projects/todayis">Today is...</a></li>
 </ul>
