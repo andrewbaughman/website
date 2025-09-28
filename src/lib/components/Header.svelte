@@ -2,7 +2,7 @@
 	<nav>
 		<a href="/">home</a>
 		<a href="/blog">blog</a>
-		<!-- <a href="/projects">projects</a> -->
+		<a href="/projects">projects</a>
 	</nav>
 </header>
 
