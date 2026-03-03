@@ -2,7 +2,7 @@
 
 **This is my website**
 
-I put it on [dru.land](dru.land), because that's a cool name for a website.
+I put it on [dru.land](https://dru.land), because that's a cool name for a website.
 
 I went for a single, small [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) page, because it's easy.
 I hosted with [Github Pages](https://docs.github.com/en/pages/quickstart), also because it's easy.
