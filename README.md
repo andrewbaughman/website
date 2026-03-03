@@ -1,4 +1,4 @@
-# dru.land
+# DruLand
 
 This is my website. 
 
