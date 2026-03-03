@@ -1,12 +1,2 @@
-<svelte:head>
-    <title>DruLand</title>    
-</svelte:head>
-
-<span>THIS<br/> IS<br/> MY<br/> WEBSITE</span>
-
-<style>
-    span {
-        font-size: 12em;
-        font-weight: bold;
-    }
-</style>
+<h1>Welcome to SvelteKit</h1>
+<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
