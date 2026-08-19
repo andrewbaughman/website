@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Book Collection</title>
+    <style>
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+body {
+  width: 60%;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  margin: 10px;
+  background-color: whitesmoke;
+}
+
+.collection-title {
+  padding: 20px;
+}
+
+.collection-title > span {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+/* read */
+table tbody tr td:nth-child(3) {
+  text-align: center;
+}
+
+/* owned */
+table tbody tr td:nth-child(4) {
+  text-align: center;
+}
+
+/* purchase */
+table tbody tr td:nth-child(5) > a {
+  display: block;
+}
+
+.column-cover-art {
+  width: 10%;
+  min-width: 100px;
+}
+
+.column-title {
+  width: 65%;
+}
+
+.column-read {
+  width: 5%;
+  min-width: 30px;
+}
+
+.column-owned {
+  width: 5%;
+  min-width: 30px;
+}
+
+.column-purchase {
+  width: 15%;
+  min-width: 150px;
+}
+
+.column-heading-cover-art {
+
+}
+
+.column-heading-title {
+
+}
+
+.column-heading-read {
+
+}
+
+.column-heading-owned {
+
+}
+
+.column-heading-purchase {
+
+}
+    </style>
+  </head>
+  <body>
+    <h1>Andrew's Book Collection</h1>
+    <details>
+      <summary>C.S. Lewis</summary>
+      <table>
+        <colgroup>
+          <col class="column-cover-art">
+          <col class="column-title">
+          <col class="column-read">
+          <col class="column-owned">
+          <col class="column-purchase">
+        </colgroup>
+        <thead>
+          <tr>
+            <th colspan="5" class="collection-title"><span>C.S. Lewis</span></th>
+          </tr>
+          <tr>
+            <th class="column-heading-cover-art">cover</th>
+            <th class="column-heading-title">title</th>
+            <th class="column-heading-read">read</th>
+            <th class="column-heading-owned">owned</th>
+            <th class="column-heading-purchase">purchase</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="assets/cover-art-out-of-the-silent-planet.jpg" alt="cover art of &quot;Out of the Silent Planet&quot;">
+            </td>
+            <td>
+              Out of the Silent Planet
+            </td>
+            <td>&#x2705;</td>
+            <td>&#x274C;</td>
+            <td>
+              <a href="https://www.biblio.com/search.php?stage=1&isbn=9780743234900&country=1&cond=nb&order=price_ship_usasc">Biblio</a>
+              <a href="https://bookshop.org/beta-search?&keywords=9780743234900">Bookshop</a>
+              <a href="https://www.betterworldbooks.com/search/results?q=9780743234900&AvailableCopies.IsNew=true">Better World Books</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="assets/cover-art-perelandra.jpg" alt="cover art of &quot;Perelandra&quot;">
+            </td>
+            <td>
+              Perelandra
+            </td>
+            <td>&#x2705;</td>
+            <td>&#x274C;</td>
+            <td>
+              <a href="https://www.biblio.com/search.php?stage=1&isbn=9780743234917&country=1&cond=nb&order=price_ship_usasc">Biblio</a>
+              <a href="https://bookshop.org/beta-search?&keywords=9780743234917">Bookshop</a>
+              <a href="https://www.betterworldbooks.com/search/results?q=9780743234917&AvailableCopies.IsNew=true">Better World Books</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="assets/cover-art-that-hideous-strength.jpg" alt="cover art of &quot;That Hideous Strength&quot;">
+            </td>
+            <td>
+              That Hideous Strength
+            </td>
+            <td>&#x2705;</td>
+            <td>&#x274C;</td>
+            <td>
+              <a href="https://www.biblio.com/search.php?stage=1&isbn=9780743234924&country=1&cond=nb&order=price_ship_usasc">Biblio</a>
+              <a href="https://bookshop.org/beta-search?&keywords=9780743234924">Bookshop</a>
+              <a href="https://www.betterworldbooks.com/search/results?q=9780743234924&AvailableCopies.IsNew=true">Better World Books</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </details>
+    <details>
+      <summary>Susan Wise Bauer</summary>
+      <table>
+        <colgroup>
+          <col class="column-cover-art">
+          <col class="column-title">
+          <col class="column-read">
+          <col class="column-owned">
+          <col class="column-purchase">
+        </colgroup>
+        <thead>
+          <tr>
+            <th colspan="5" class="collection-title"><span>Susan Wise Bauer</span></th>
+          </tr>
+          <tr>
+            <th class="column-heading-cover-art">cover</th>
+            <th class="column-heading-title">title</th>
+            <th class="column-heading-read">read</th>
+            <th class="column-heading-owned">owned</th>
+            <th class="column-heading-purchase">purchase</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="assets/cover-art-history-of-the-ancient-world.jpg" alt="cover art of &quot;The History of the Ancient World&quot;">
+            </td>
+            <td>
+              The History of the Ancient World: From the Earliest Accounts to the Fall of Rome
+            </td>
+            <td>&#x2705;</td>
+            <td>&#x274C;</td>
+            <td>
+              <a href="https://www.biblio.com/search.php?stage=1&isbn=9780393059748&country=1&cond=nb&order=price_ship_usasc">Biblio</a>
+              <a href="https://bookshop.org/beta-search?&keywords=9780393059748">Bookshop</a>
+              <a href="https://www.betterworldbooks.com/search/results?q=9780393059748&AvailableCopies.IsNew=true">Better World Books</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="assets/cover-art-history-of-the-medieval-world.jpg" alt="cover art of &quot;The History of the Medieval World&quot;">
+            </td>
+            <td>
+              The History of the Medieval World: From the Conversion of Constantine to the First Crusade
+            </td>
+            <td>&#x2705;</td>
+            <td>&#x274C;</td>
+            <td>
+              <a href="https://www.biblio.com/search.php?stage=1&isbn=9780393059755&country=1&cond=nb&order=price_ship_usasc">Biblio</a>
+              <a href="https://bookshop.org/beta-search?&keywords=9780393059755">Bookshop</a>
+              <a href="https://www.betterworldbooks.com/search/results?q=9780393059755&AvailableCopies.IsNew=true">Better World Books</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="assets/cover-art-history-of-the-renaissance-world.jpg" alt="cover art of &quot;The History of the Renaissance World&quot;">
+            </td>
+            <td>
+              The History of the Renaissance World: From the Rediscovery of Aristotle to the Conquest of Constantinople
+            </td>
+            <td>&#x2705;</td>
+            <td>&#x274C;</td>
+            <td>
+              <a href="https://www.biblio.com/search.php?stage=1&isbn=9780393059762&country=1&cond=nb&order=price_ship_usasc">Biblio</a>
+              <a href="https://bookshop.org/beta-search?&keywords=9780393059762">Bookshop</a>
+              <a href="https://www.betterworldbooks.com/search/results?q=9780393059762&AvailableCopies.IsNew=true">Better World Books</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="assets/cover-art-story-of-western-science.jpg" alt="cover art of &quot;The Story of Western Science&quot;">
+            </td>
+            <td>
+              The Story of Western Science: From the Writings of Aristotle to the Big Bang Theory
+            </td>
+            <td>&#x274C;</td>
+            <td>&#x274C;</td>
+            <td>
+              <a href="https://www.biblio.com/search.php?stage=1&isbn=9780393243260&country=1&cond=nb&order=price_ship_usasc">Biblio</a>
+              <a href="https://bookshop.org/beta-search?&keywords=9780393243260">Bookshop</a>
+              <a href="https://www.betterworldbooks.com/search/results?q=9780393243260&AvailableCopies.IsNew=true">Better World Books</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="assets/cover-art-well-educated-mind.jpg" alt="cover art of &quot;The Well-Educated Mind&quot;">
+            </td>
+            <td>
+              The Well-Educated Mind: A Guide to the Classical Education You Never Had (Updated and Expanded)
+            </td>
+            <td>&#x2705;</td>
+            <td>&#x274C;</td>
+            <td>
+              <a href="https://www.biblio.com/search.php?stage=1&isbn=9780393080964&country=1&cond=nb&order=price_ship_usasc">Biblio</a>
+              <a href="https://bookshop.org/beta-search?&keywords=9780393080964">Bookshop</a>
+              <a href="https://www.betterworldbooks.com/search/results?q=9780393080964&AvailableCopies.IsNew=true">Better World Books</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </details>
+  </body>
+</html>
