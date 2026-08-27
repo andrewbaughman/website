@@ -4,19 +4,21 @@
     <title>My Book Collection</title>
     <style>
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, "Times New Roman", serif;
     text-align: center;
 }
 
 body {
   width: 60%;
   margin: auto;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 table {
-  width: 100%;
-  margin: 10px;
+  width: min(90vw, 1000px);
+  margin: 10px auto;
   background-color: whitesmoke;
+  table-layout: fixed;
 }
 
 .collection-title {
@@ -24,8 +26,39 @@ table {
 }
 
 .collection-title > span {
+  font-family: Georgia, "Times New Roman", serif;
   font-weight: bold;
   font-size: x-large;
+}
+
+summary {
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  padding: 10px;
+  width: min(90vw, 1000px);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.badge {
+  display: inline-block;
+  width: 90px;
+  padding: 8px 0;
+  border-radius: 999px;
+  font-size: smaller;
+  font-weight: 600;
+  text-align: center;
+}
+
+.badge-true {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.badge-false {
+  background-color: #e2e8f0;
+  color: #4a5568;
 }
 
 /* read */
@@ -43,28 +76,32 @@ table tbody tr td:nth-child(5) > a {
   display: block;
 }
 
+table tbody td {
+  vertical-align: middle;
+}
+
 .column-cover-art {
-  width: 10%;
-  min-width: 100px;
+  width: 15%;
 }
 
 .column-title {
-  width: 65%;
+  width: 44%;
 }
 
 .column-read {
-  width: 5%;
-  min-width: 30px;
+  width: 12%;
 }
 
 .column-owned {
-  width: 5%;
-  min-width: 30px;
+  width: 12%;
 }
 
 .column-purchase {
-  width: 15%;
-  min-width: 150px;
+  width: 17%;
+}
+
+table tbody tr td:nth-child(2) {
+  overflow-wrap: break-word;
 }
 
 .column-heading-cover-art {
@@ -120,8 +157,8 @@ table tbody tr td:nth-child(5) > a {
             <td>
               Out of the Silent Planet
             </td>
-            <td>&#x2705;</td>
-            <td>&#x274C;</td>
+            <td><span class="badge badge-true">Read</span></td>
+            <td><span class="badge badge-false">Not owned</span></td>
             <td>
               <a href="https://www.biblio.com/search.php?stage=1&isbn=9780743234900&country=1&cond=nb&order=price_ship_usasc">Biblio</a>
               <a href="https://bookshop.org/beta-search?&keywords=9780743234900">Bookshop</a>
@@ -135,8 +172,8 @@ table tbody tr td:nth-child(5) > a {
             <td>
               Perelandra
             </td>
-            <td>&#x2705;</td>
-            <td>&#x274C;</td>
+            <td><span class="badge badge-true">Read</span></td>
+            <td><span class="badge badge-false">Not owned</span></td>
             <td>
               <a href="https://www.biblio.com/search.php?stage=1&isbn=9780743234917&country=1&cond=nb&order=price_ship_usasc">Biblio</a>
               <a href="https://bookshop.org/beta-search?&keywords=9780743234917">Bookshop</a>
@@ -150,8 +187,8 @@ table tbody tr td:nth-child(5) > a {
             <td>
               That Hideous Strength
             </td>
-            <td>&#x2705;</td>
-            <td>&#x274C;</td>
+            <td><span class="badge badge-true">Read</span></td>
+            <td><span class="badge badge-false">Not owned</span></td>
             <td>
               <a href="https://www.biblio.com/search.php?stage=1&isbn=9780743234924&country=1&cond=nb&order=price_ship_usasc">Biblio</a>
               <a href="https://bookshop.org/beta-search?&keywords=9780743234924">Bookshop</a>
@@ -191,8 +228,8 @@ table tbody tr td:nth-child(5) > a {
             <td>
               The History of the Ancient World: From the Earliest Accounts to the Fall of Rome
             </td>
-            <td>&#x2705;</td>
-            <td>&#x274C;</td>
+            <td><span class="badge badge-true">Read</span></td>
+            <td><span class="badge badge-false">Not owned</span></td>
             <td>
               <a href="https://www.biblio.com/search.php?stage=1&isbn=9780393059748&country=1&cond=nb&order=price_ship_usasc">Biblio</a>
               <a href="https://bookshop.org/beta-search?&keywords=9780393059748">Bookshop</a>
@@ -206,8 +243,8 @@ table tbody tr td:nth-child(5) > a {
             <td>
               The History of the Medieval World: From the Conversion of Constantine to the First Crusade
             </td>
-            <td>&#x2705;</td>
-            <td>&#x274C;</td>
+            <td><span class="badge badge-true">Read</span></td>
+            <td><span class="badge badge-false">Not owned</span></td>
             <td>
               <a href="https://www.biblio.com/search.php?stage=1&isbn=9780393059755&country=1&cond=nb&order=price_ship_usasc">Biblio</a>
               <a href="https://bookshop.org/beta-search?&keywords=9780393059755">Bookshop</a>
@@ -221,8 +258,8 @@ table tbody tr td:nth-child(5) > a {
             <td>
               The History of the Renaissance World: From the Rediscovery of Aristotle to the Conquest of Constantinople
             </td>
-            <td>&#x2705;</td>
-            <td>&#x274C;</td>
+            <td><span class="badge badge-true">Read</span></td>
+            <td><span class="badge badge-false">Not owned</span></td>
             <td>
               <a href="https://www.biblio.com/search.php?stage=1&isbn=9780393059762&country=1&cond=nb&order=price_ship_usasc">Biblio</a>
               <a href="https://bookshop.org/beta-search?&keywords=9780393059762">Bookshop</a>
@@ -236,8 +273,8 @@ table tbody tr td:nth-child(5) > a {
             <td>
               The Story of Western Science: From the Writings of Aristotle to the Big Bang Theory
             </td>
-            <td>&#x274C;</td>
-            <td>&#x274C;</td>
+            <td><span class="badge badge-false">Unread</span></td>
+            <td><span class="badge badge-false">Not owned</span></td>
             <td>
               <a href="https://www.biblio.com/search.php?stage=1&isbn=9780393243260&country=1&cond=nb&order=price_ship_usasc">Biblio</a>
               <a href="https://bookshop.org/beta-search?&keywords=9780393243260">Bookshop</a>
@@ -251,8 +288,8 @@ table tbody tr td:nth-child(5) > a {
             <td>
               The Well-Educated Mind: A Guide to the Classical Education You Never Had (Updated and Expanded)
             </td>
-            <td>&#x2705;</td>
-            <td>&#x274C;</td>
+            <td><span class="badge badge-true">Read</span></td>
+            <td><span class="badge badge-false">Not owned</span></td>
             <td>
               <a href="https://www.biblio.com/search.php?stage=1&isbn=9780393080964&country=1&cond=nb&order=price_ship_usasc">Biblio</a>
               <a href="https://bookshop.org/beta-search?&keywords=9780393080964">Bookshop</a>
