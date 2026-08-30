@@ -16,7 +16,7 @@ body {
 
 table {
   width: min(90vw, 1000px);
-  margin: 10px auto;
+  margin: 10px auto 20px auto;
   background-color: whitesmoke;
   table-layout: fixed;
   border-collapse: collapse;
@@ -109,6 +109,21 @@ table tbody tr:hover {
   background-color: #e0e0e0;
 }
 
+thead {
+    background: #f3f4f6;
+}
+
+thead th {
+    padding: 1rem;
+    border-bottom: 2px solid #ddd;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 700;
+}
+
 .column-cover-art {
   width: 15%;
 }
@@ -128,32 +143,11 @@ table tbody tr:hover {
 .column-purchase {
   width: 17%;
 }
-
-.column-heading-cover-art {
-
-}
-
-.column-heading-title {
-
-}
-
-.column-heading-read {
-
-}
-
-.column-heading-owned {
-
-}
-
-.column-heading-purchase {
-
-}
     </style>
   </head>
   <body>
     <h1>Andrew's Book Collection</h1>
-    <details name="book-collection" open>
-      <summary>C.S. Lewis</summary>
+    <section id="cs-lewis">
       <table>
         <colgroup>
           <col class="column-cover-art">
@@ -222,9 +216,8 @@ table tbody tr:hover {
           </tr>
         </tbody>
       </table>
-    </details>
-    <details name="book-collection">
-      <summary>Susan Wise Bauer</summary>
+    </section>
+    <section id="susan-wise-bauer">
       <table>
         <colgroup>
           <col class="column-cover-art">
@@ -323,6 +316,6 @@ table tbody tr:hover {
           </tr>
         </tbody>
       </table>
-    </details>
+    </section>
   </body>
 </html>
